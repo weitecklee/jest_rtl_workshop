@@ -11,7 +11,7 @@ function App() {
       <button type="button" onClick={() => setCount((a) => Number(a) + 1)}>
         Increase!
       </button>
-      <div>
+      <div data-testid="counter">
         {counter}
       </div>
       <select value={counter} onChange={(e) => setCount(e.target.value)}>
@@ -25,7 +25,6 @@ function App() {
       </select>
       <br />
       <input type="number" value={counter} onChange={(e) => setCount(e.target.value)} />
-      <input type="number" value={Number(counter) + 1} onChange={(e) => setCount(e.target.value - 1)} />
       <div>
         {counter > 0 ? 'Positive' : counter < 0 ? 'Negative' : 'Zero'}
       </div>
