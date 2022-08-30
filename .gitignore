@@ -1,4 +1,5 @@
 node_modules
 /public/bundle.*
+coverage
 
 .DS_Store
